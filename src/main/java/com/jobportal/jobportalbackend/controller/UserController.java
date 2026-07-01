@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = {
+        "https://jobportal-frontend-h7pf.onrender.com",
+        "http://localhost:3000"
+})
 public class UserController {
 
     private final UserService userService;
