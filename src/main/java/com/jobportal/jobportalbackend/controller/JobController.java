@@ -5,8 +5,12 @@ import com.jobportal.jobportalbackend.service.JobService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-@CrossOrigin("*")
+
 @RestController
+@CrossOrigin(origins = {
+        "https://jobportal-frontend-h7pf.onrender.com",
+        "http://localhost:3000"
+})
 public class JobController {
 
     private final JobService jobService;

@@ -12,7 +12,10 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 //@RequestMapping("/applications")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "https://jobportal-frontend-h7pf.onrender.com",
+        "http://localhost:3000"
+})
 
 
 public class ApplicationController {
